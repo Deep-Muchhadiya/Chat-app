@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IChat - Realtime Chatting App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer type="module" src="client.js"></script>
+</head>
+<body>
+    <nav>
+        <img src="./logo.png" alt="IChat Logo">
+        <h1>IChat</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="msg right">rohan: hi</div>
+        <div class="msg left">harry: hi</div> -->
+    </div>
+    <div class="keyboard">
+        <form action="#" id="form">
+            <input type="text" class="msgInp" placeholder="type something..">
+            <button type="submit" class="btn">send</button>
+        </form>
+    </div>
+</body>
+</html>
