@@ -4,9 +4,9 @@ const http = require("http");
 const { Server } = require("socket.io"); 
 const cors = require("cors"); 
 const app = express();
-app.use(cors({ origin: "https://deep-muchhadiya.github.io/Chat-app/" })); 
+app.use(cors({ origin: "*" })); 
 const server = http.createServer(app); 
-const io = new Server(server, { cors: { origin: "https://deep-muchhadiya.github.io/Chat-app/", methods: ["GET", "POST"] } });
+const io = new Server(server, { cors: { origin: "*", methods: ["GET", "POST"] } });
 
 const users = {};
 
