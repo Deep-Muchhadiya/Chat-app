@@ -2,7 +2,7 @@
 // const io = new Server(server, { /* options */ });
 
 import { io } from "https://cdn.socket.io/4.5.4/socket.io.esm.min.js";
-const socket = io("http://localhost:3000");
+const socket = io("https://chat-app-ihi9.onrender.com");
 
 
 // const socket = io('http://localhost:8000');
